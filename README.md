@@ -1,2 +1,2 @@
 # DesignPatterns
-simple implementation of design patterns that I learned in course
+simple implementation of design patterns that I learned in a course
