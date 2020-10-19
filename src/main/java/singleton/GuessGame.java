@@ -19,8 +19,8 @@ public class GuessGame {
     }
 
     public void run() {
-        for (int i = 0; i < 10; i++) {
-            System.out.println(i + " - game is running...");
+        for (int i = 0; i < 5; i++) {
+            System.out.println(i + " - game from " + getClass().getName() + " is running...");
         }
         System.out.println("Game finished.");
     }
