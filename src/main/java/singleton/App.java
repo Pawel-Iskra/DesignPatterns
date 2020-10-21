@@ -12,5 +12,10 @@ public class App {
         System.out.println("(gameEnum1 == gameEnum2) is the same instance? = " + (gameEnum1 == gameEnum2));
         gameEnum1.run();
 
+        GuessGameSerializable gameSerializable1 = GuessGameSerializable.getInstance();
+        GuessGameSerializable gameSerializable2 = GuessGameSerializable.getInstance();
+        System.out.println("(gameSerializable1 == gameSerializable2) = " + (gameSerializable1 == gameSerializable2));
+        gameSerializable1.run();
+
     }
 }

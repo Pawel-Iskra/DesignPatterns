@@ -7,6 +7,6 @@ public enum GuessGameEnum {
         for (int i = 0; i < 5; i++) {
             System.out.println(i + " - game from " + getClass().getName() + " is running...");
         }
-        System.out.println("Game finished.");
+        System.out.println("Game finished.\n");
     }
 }
