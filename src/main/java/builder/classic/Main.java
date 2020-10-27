@@ -1,23 +1,16 @@
 package builder.classic;
 
 public class Main {
-    public static void main(String[] args){
+    public static void main(String[] args) {
+        HeroDirector batmanDirector = new HeroDirector(new BatmanBuilder());
+        batmanDirector.buildHero();
+        Hero batman = batmanDirector.getHero();
+        System.out.println("batman = " + batman);
 
-        AlfaTypeGarageBuilder alfaTypeGarageBuilder = new AlfaTypeGarageBuilder();
-        BetaTypeGarageBuilder betaTypeGarageBuilder = new BetaTypeGarageBuilder();
-
-        GarageDirector alfaTypeGarageDirector = new GarageDirector(alfaTypeGarageBuilder);
-        alfaTypeGarageDirector.buildGarage();
-
-        GarageDirector betaTypeGarageDirector = new GarageDirector(betaTypeGarageBuilder);
-        betaTypeGarageDirector.buildGarage();
-
-
-        Garage alfaTypeGarage = alfaTypeGarageDirector.getGarage();
-        System.out.println(alfaTypeGarage);
-
-        Garage betaTypeGarage = betaTypeGarageDirector.getGarage();
-        System.out.println(betaTypeGarage);
+        HeroDirector spidermanDirector = new HeroDirector(new SpiderManBuilder());
+        spidermanDirector.buildHero();
+        Hero spiderman = spidermanDirector.getHero();
+        System.out.println("spiderman = " + spiderman);
 
     }
 }
